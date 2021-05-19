@@ -44,6 +44,7 @@ class _MyAppState extends State<MyApp> {
         },
         child:Scaffold(
           appBar: AppBar(
+            centerTitle: true,
             title: Text("Number of clicks: $_counter",
               style: TextStyle(fontFamily: 'Appetite',
                   fontSize: 22.0
