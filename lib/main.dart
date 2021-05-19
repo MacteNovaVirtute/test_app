@@ -33,10 +33,17 @@ class _MyAppState extends State<MyApp> {
       home: GestureDetector(
         onTap: changeBackground,
         child:Scaffold(
+        appBar: AppBar(
+        title: Text("Нажмите на любую часть экрана",
+        style: TextStyle(fontFamily: 'Appetite',
+        fontSize: 22.0
+        ),
+      ),
+    ),
           backgroundColor: _backgroundColor,
           body: Center(
               child: Text(
-                  "Hey There",
+                  "Hey there",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 80.0,
@@ -50,3 +57,4 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+

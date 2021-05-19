@@ -44,6 +44,9 @@ flutter:
     - family: Ubuntu
       fonts:
         - asset: assets/Ubuntu.ttf
+    - family: Appetite
+      fonts:
+        - asset: assets/Appetite.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
