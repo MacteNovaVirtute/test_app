@@ -41,12 +41,27 @@ flutter:
   uses-material-design: true
 
   fonts:
-    - family: Ubuntu
+    - family: font1
       fonts:
-        - asset: assets/Ubuntu.ttf
-    - family: Appetite
+        - asset: assets/font1.ttf
+    - family: font2
       fonts:
-        - asset: assets/Appetite.ttf
+        - asset: assets/font2.otf
+    - family: font3
+      fonts:
+        - asset: assets/font3.otf
+    - family: font4
+      fonts:
+        - asset: assets/font4.ttf
+    - family: font5
+      fonts:
+        - asset: assets/font5.otf
+    - family: font6
+      fonts:
+        - asset: assets/font6.ttf
+    - family: font7
+      fonts:
+        - asset: assets/font7.otf
 
   # To add assets to your application, add an assets section, like this:
   # assets:

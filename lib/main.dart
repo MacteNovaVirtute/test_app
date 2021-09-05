@@ -15,7 +15,12 @@ class _MyAppState extends State<MyApp> {
 
   Color _backgroundColor = Colors.white;
   int _counter = 0;
-
+  int font = 0;
+  void changeFont() {
+    setState(() {
+      font = Random().nextInt(7) + 1;
+    });
+  }
   @override
   Widget build(BuildContext context) {
 
@@ -41,6 +46,7 @@ class _MyAppState extends State<MyApp> {
         onTap: (){
           changeBackground();
           incrementCounter();
+          changeFont();
         },
         child:Scaffold(
           appBar: AppBar(
@@ -58,7 +64,7 @@ class _MyAppState extends State<MyApp> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 80.0,
-                    fontFamily: 'Ubuntu',
+                    fontFamily: 'font$font',
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic,
                     color: Colors.blue,))
